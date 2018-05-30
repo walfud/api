@@ -1,0 +1,40 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Back Edge for walfud.com",
+  "main": "app.js",
+  "scripts": {
+    "debug": "babel-node app.js",
+    "start": "node build/app.js",
+    "build": "babel . --out-dir build --source-maps --ignore node_modules,build",
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walfud/api.git"
+  },
+  "author": "walfud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walfud/api/issues"
+  },
+  "homepage": "https://github.com/walfud/api#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "mongodb": "^3.0.8",
+    "node-fetch": "^2.1.2",
+    "puppeteer": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0"
+  }
+}

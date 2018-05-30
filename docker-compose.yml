@@ -1,0 +1,23 @@
+version: "3"
+services:
+
+  node:
+    image: node:10
+    container_name: api
+    env_file: .env
+    working_dir: /api
+    command: npm start
+    volumes:
+      - .:/api
+    ports:
+      - "38491:3000"
+    expose:
+      - "3000"
+    networks:
+      static:
+        ipv4_address: 192.168.100.150
+
+
+networks:
+  static:
+    external: true
