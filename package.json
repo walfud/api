@@ -22,6 +22,7 @@
   "homepage": "https://github.com/walfud/api#readme",
   "dependencies": {
     "dotenv": "^5.0.1",
+    "is-async-func": "^1.0.0",
     "is-promise": "^2.1.0",
     "koa": "^2.5.1",
     "koa-bodyparser": "^4.2.0",
