@@ -1,0 +1,1 @@
+export const MYSQL_URL = process.env.MYSQL_URL || require('dotenv').config().MYSQL_URL
